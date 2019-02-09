@@ -5,7 +5,6 @@ import SongItem from './SongItem';
 
 class SongList extends Component {
     render() {
-        console.log('this.props: ', this.props);
         return (
             <div className="ui divided list">
                 {this.props.songs.map(e =>
@@ -20,7 +19,6 @@ class SongList extends Component {
 }
 
 const mapStateToProps = state => {
-    console.log('state: ', state);
     return { songs: state.songs };
 }
 
